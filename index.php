@@ -42,6 +42,7 @@ and open the template in the editor.
                 $gstr= file_get_contents($url);
                 //echo $gstr;
                 $gjson=  json_decode($gstr,true);
+                
                 $adr_str=$gjson['results'][0]['formatted_address'];
                 
                 $lat=$gjson['results'][0]['geometry']['location']['lat'];
